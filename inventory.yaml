@@ -1,0 +1,20 @@
+fabric: DC1
+
+devices:
+  - hostname: leaf01
+    platform: nexus_93180yc-fx
+    os: nx-os
+    version: 9.3(9)
+    role: leaf
+
+  - hostname: leaf02
+    platform: nexus_93180yc-fx
+    os: nx-os
+    version: 9.3(9)
+    role: leaf
+
+  - hostname: spine01
+    platform: nexus_9336c-fx2
+    os: nx-os
+    version: 10.2(5)
+    role: spine
