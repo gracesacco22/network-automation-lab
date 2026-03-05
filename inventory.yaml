@@ -1,20 +1,47 @@
 fabric: DC1
+location_summary: "North America - HQ"
 
 devices:
+  # --- Cisco Nexus Switches ---
   - hostname: leaf01
     platform: nexus_93180yc-fx
     os: nx-os
     version: 9.3(9)
     role: leaf
+    location: "Row 01 / Rack A / U12"
 
   - hostname: leaf02
     platform: nexus_93180yc-fx
     os: nx-os
     version: 9.3(9)
     role: leaf
+    location: "Row 01 / Rack B / U12"
 
   - hostname: spine01
     platform: nexus_9336c-fx2
     os: nx-os
     version: 10.2(5)
     role: spine
+    location: "Row 01 / Rack C / U20"
+
+  # --- Arista Switches ---
+  - hostname: leaf03
+    platform: arista_7050sx3
+    os: eos
+    version: 4.29.2F
+    role: leaf
+    location: "Row 02 / Rack A / U15"
+
+  - hostname: leaf04
+    platform: arista_7050sx3
+    os: eos
+    version: 4.29.2F
+    role: leaf
+    location: "Row 02 / Rack B / U15"
+
+  - hostname: spine02
+    platform: arista_7504r3
+    os: eos
+    version: 4.30.1F
+    role: spine
+    location: "Row 02 / Rack C / U24"
